@@ -18,15 +18,15 @@ Gray code is a binary numeral system in which two consecutive values differ by o
 
 ## Gray-to-Binary Conversion Logic
 
-Let the 3-bit Gray code input be \(G_2G_1G_0\) and the binary output be \(B_2B_1B_0\).
+Let the 3-bit Gray code input be (G2 G1 G0) and the binary output be (B2 B1 B0).
 
 The conversion follows these equations:
 
-- \(B_2 = G_2\)
-- \(B_1 = B_2 \oplus G_1 = G_2 \oplus G_1\)
-- \(B_0 = B_1 \oplus G_0 = G_2 \oplus G_1 \oplus G_0\)
+- (B2 = G2)
+- (B1 = B2 ⊕ G1)
+- (B0 = B1 ⊕ G0)
 
-Here, \(\oplus\) denotes the XOR operation.
+Here, ⊕ denotes the XOR operation.
 
 The most significant binary bit is identical to the most significant Gray bit. Each subsequent binary bit is obtained by XORing the previous binary bit with the corresponding Gray bit.
 
